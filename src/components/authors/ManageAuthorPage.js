@@ -80,7 +80,7 @@ var ManageAuthorPage = React.createClass({
     event.preventDefault();
     if(!this.authorFormIsValid()) { return event.stopPropagation(); }
     if (this.state.author.id) {
-      AuthorActions.updateAuthor(this.state.author)
+      AuthorActions.updateAuthor(this.state.author);
     } else {
       AuthorActions.createAuthor(this.state.author);
     }
